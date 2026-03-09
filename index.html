@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BST Görselleştirici - Binary Search Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1>BST Görselleştirici</h1>
+            <div class="control-group">
+                <input type="number" id="nodeValue" placeholder="Değer girin" min="0" max="9999">
+                <button id="addBtn">Ekle</button>
+                <button id="removeBtn">Sil</button>
+                <button id="clearBtn">Temizle</button>
+            </div>
+            <div class="control-group">
+                <button id="randomBtn">Rastgele 20 Node</button>
+                <button id="random50Btn">Rastgele 50 Node</button>
+                <button id="random100Btn">Rastgele 100 Node</button>
+            </div>
+            <div class="zoom-controls">
+                <button id="zoomInBtn">+</button>
+                <button id="zoomOutBtn">-</button>
+                <button id="resetViewBtn">Sıfırla</button>
+                <span id="zoomLevel">Zoom: 100%</span>
+            </div>
+            <div class="info">
+                <p>Node Sayısı: <span id="nodeCount">0</span></p>
+                <p>Derinlik: <span id="depth">0</span></p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="treeCanvas"></canvas>
+        </div>
+    </div>
+    <script src="bst.js"></script>
+</body>
+</html>
+
+

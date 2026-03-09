@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.controls {
+    width: 300px;
+    background: #1a1a1a;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 2px solid #333;
+}
+
+.controls h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.control-group input {
+    padding: 10px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.control-group input:focus {
+    outline: none;
+    border-color: #00aaff;
+}
+
+.control-group button {
+    padding: 10px;
+    background: #00aaff;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.control-group button:hover {
+    background: #0088cc;
+}
+
+.control-group button:active {
+    background: #0066aa;
+}
+
+#removeBtn {
+    background: #ff4444;
+}
+
+#removeBtn:hover {
+    background: #cc3333;
+}
+
+#clearBtn {
+    background: #ff8800;
+}
+
+#clearBtn:hover {
+    background: #cc6600;
+}
+
+.zoom-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.zoom-controls button {
+    padding: 8px 15px;
+    background: #333;
+    border: 1px solid #555;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.zoom-controls button:hover {
+    background: #444;
+}
+
+#zoomLevel {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.info {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.info span {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.canvas-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #0a0a0a;
+    background-image: 
+        linear-gradient(#1a1a1a 1px, transparent 1px),
+        linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+    background-size: 50px 50px;
+    cursor: grab;
+}
+
+.canvas-container:active {
+    cursor: grabbing;
+}
+
+#treeCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Scrollbar styling */
+.controls::-webkit-scrollbar {
+    width: 8px;
+}
+
+.controls::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.controls::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.controls::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
